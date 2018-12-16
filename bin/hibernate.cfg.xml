@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.SQLServer2012Dialect</property>  
+        <property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=CoreHibernateConnectionDemo</property>  
+        <property name="connection.username">sa</property>  
+        <property name="connection.password">3edc#EDC</property>  
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>  
+    	<mapping resource="beans.hbm.xml"/>  
+    </session-factory>  
+  
+</hibernate-configuration>  
